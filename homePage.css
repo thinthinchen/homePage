@@ -1,0 +1,158 @@
+html,body{
+	padding: 0;
+	margin: 0;
+	font-size: 10px;
+	color: white;
+	height: 100%;
+}
+.wrap{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	flex-wrap: nowrap;
+	width: 100%;
+	height: 100%
+}
+.continar{
+	flex: 1;
+	width: 100%;
+	overflow: auto;
+	overflow-scrolling: touch;
+}
+.header{
+	position: relative;
+	width: 100%;
+	background: rgb(95,192,205);
+	padding: 1rem 0;
+	text-align: center;	
+	font-size: 2rem;
+}
+.return{	
+	width: 10px;
+	height: 10px;
+	border-left: 2px solid white;
+	border-bottom: 2px solid white;
+	transform: rotate(45deg);
+	position: absolute;
+	top: 50%;
+	margin-top: -5px;
+	margin-left: 1.5rem;
+}
+.banner{
+	background-image: url(image/homePage/background.png) ;
+	background-size: 100% 100%;
+}
+.banner .information,.banner .name,.banner .address,.banner .abstract{
+	display: flex;
+}
+.banner .abstract{
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.banner .information{
+	padding: 2rem 0;
+}
+.banner .photo{
+	width: 7rem;
+	height: 7rem;
+	margin: auto 1rem;
+}
+.banner .address img{
+	width: 12px;
+	height: 15px;
+}
+.banner .address p,.banner .address img,.banner .name p{
+	margin: auto 0.2rem;
+}
+.banner .address,.banner .name{
+	margin-top: 0.5rem;
+}
+.banner .name p:nth-of-type(1){
+	font-size: 1.8rem;
+	margin-left: 1rem;
+}
+.banner .name p:nth-of-type(2){
+	font-size: 1.6rem;
+	margin-left: 0.8rem;
+}
+.banner .address p{
+	font-size: 1.2rem;
+}
+.skill,.main{
+	margin-left: 1rem;
+	border-bottom: 1px solid rgb(225,229,231);
+	margin-left: 0;
+}
+.skill div:nth-of-type(1):before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    margin-top: -7px;
+    height: 60%;
+    width: 2px;
+    background-color: skyblue;
+    margin-left: 1rem;
+}
+.skill p{		
+	padding: 0 2rem;
+	font-size: 1.8rem;
+	color: black;
+}
+.skill .black{
+	color: black;
+	font-size: 1.8rem;
+	font-weight: 600;
+}
+.skill .position{
+	position: relative;
+}
+.main{
+	display: flex;
+	padding: 1.5rem 0;
+	margin-left: 1rem;
+	overflow: auto;
+}
+.main p{
+	color: black;
+	font-size: 1.6rem;
+	font-weight: 550;
+}
+.main img{
+	width: 1.3rem;
+	height: 1.3rem;
+}
+.main img,.main p{
+	margin: auto 0.5rem;
+}
+.main .border{
+	border-right: 1px solid rgb(225,229,231);
+	color: #c0c0c0;
+	padding-right: 1rem;
+}
+.main .right{
+	flex: 1;
+}
+.footer{
+	background: white;
+	width: 100%;
+	display: flex;
+	position:relative;
+	margin-top: 2rem;
+	bottom: 0.5rem;
+	justify-content: space-around;	
+}
+.footer div{
+	text-align: center;
+	width: 45%;
+	font-size: 2rem;
+	border: 1px solid skyblue;
+	border-radius: 0.2em;
+	padding: 1rem 0;
+}
+.footer div:nth-of-type(1){
+	color: skyblue;	
+}
+.footer div:nth-of-type(2){
+	background: skyblue;
+}
